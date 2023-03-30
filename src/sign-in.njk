@@ -1,0 +1,92 @@
+---
+layout: landing.njk
+title: Sign in
+---
+
+<main id="main" class="h-screen">
+  <div class="flex min-h-full">
+    <div class="flex flex-col sm:justify-start flex-1 px-4 py-12 sm:px-6 lg:flex-none lg:px-20 xl:px-24 bg-white dark:bg-slate-900">
+      <div class="w-full max-w-sm mx-auto lg:w-96">
+        <div>
+          <h2 class="mt-6 text-3xl font-extrabold text-gray-700 dark:text-gray-300">Sign in to your account</h2>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">
+            Or
+            <a href="#" class="font-medium text-orange-500 dark:text-orange-500 hover:text-orange-400"> start your 14-day free trial </a>
+          </p>
+        </div>
+
+        <div class="mt-8">
+          <div>
+            <div>
+              <p class="text-sm font-medium text-gray-600 dark:text-gray-400">Sign in with</p>
+
+              <div class="grid grid-cols-2 gap-3 mt-1">
+                <div>
+                  <a href="#" class="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50">
+                    <span class="sr-only">Sign in with Facebook</span>
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                      <path fill-rule="evenodd" d="M20 10c0-5.523-4.477-10-10-10S0 4.477 0 10c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V10h2.54V7.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V10h2.773l-.443 2.89h-2.33v6.988C16.343 19.128 20 14.991 20 10z" clip-rule="evenodd" />
+                    </svg>
+                  </a>
+                </div>
+
+                <div>
+                  <a href="#" class="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50">
+                    <span class="sr-only">Sign in with Google</span>
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                      <path fill="currentColor" d="m19.850197 8.270351c0.8574047 4.880001 -1.987587 9.65214 -6.6881847 11.218641c-4.700598 1.5665016 -9.83958 -0.5449295 -12.08104 -4.963685c-2.2414603 -4.4187555 -0.909603 -9.81259 3.1310139 -12.6801605c4.040616 -2.867571 9.571754 -2.3443127 13.002944 1.2301085l-2.8127813 2.7000687l0 0c-2.0935059 -2.1808972 -5.468274 -2.500158 -7.933616 -0.75053835c-2.4653416 1.74962 -3.277961 5.040613 -1.9103565 7.7366734c1.3676047 2.6960592 4.5031037 3.9843292 7.3711267 3.0285425c2.868022 -0.95578575 4.6038647 -3.8674583 4.0807285 -6.844941z" fillRule="evenodd"/> <path fill="currentColor" d="m10.000263 8.268785l9.847767 0l0 3.496233l-9.847767 0z" fillRule="evenodd"/>                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="relative mt-6">
+              <div class="absolute inset-0 flex items-center" aria-hidden="true">
+                <div class="w-full border-t border-gray-300"></div>
+              </div>
+              <div class="relative flex justify-center text-sm">
+                <span class="px-2 text-gray-600 bg-gray-100 dark:text-gray-600 dark:bg-gray-200"> Or continue with </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-6">
+            <form action="#" method="POST" class="space-y-6">
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-600 dark:text-gray-400"> Email address </label>
+                <div class="mt-1">
+                  <input id="email" name="email" type="email" autocomplete="email" required class="block w-full px-3 py-2 placeholder-gray-400 border border-gray-300 rounded-md shadow-sm appearance-none focus:outline-none focus:ring-orange-500 focus:border-orange-500 sm:text-sm">
+                </div>
+              </div>
+
+              <div class="space-y-1">
+                <label for="password" class="block text-sm font-medium text-gray-600 dark:text-gray-400"> Password </label>
+                <div class="mt-1">
+                  <input id="password" name="password" type="password" autocomplete="current-password" required class="block w-full px-3 py-2 placeholder-gray-400 border border-gray-300 rounded-md shadow-sm appearance-none focus:outline-none focus:ring-orange-500 focus:border-orange-500 sm:text-sm">
+                </div>
+              </div>
+
+              <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                  <input id="remember-me" name="remember-me" type="checkbox" class="w-4 h-4 text-orange-600 border-gray-300 rounded focus:ring-orange-500">
+                  <label for="remember-me" class="block ml-2 text-sm text-gray-600 dark:text-gray-400"> Remember me </label>
+                </div>
+
+                <div class="text-sm">
+                  <a href="#" class="font-medium text-orange-500 dark:text-orange-500 hover:text-orange-500"> Forgot your password? </a>
+                </div>
+              </div>
+
+              <div>
+                <button type="submit" class="flex justify-center w-full px-4 py-2 text-sm font-medium text-white bg-orange-500 hover:bg-orange-600 border border-transparent rounded-md shadow-sm dark:bg-orange-700 dark:text-gray-0 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500">Sign in</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="relative flex-1 hidden w-0 lg:block">
+      <img class="absolute inset-o object-cover w-full h-full" src="/static/images/web-photos/bg-sign-in-3.jpg" alt="" />
+    </div>
+  </div>
+</main>
